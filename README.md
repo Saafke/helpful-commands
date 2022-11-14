@@ -8,7 +8,7 @@ f = open('data.json')
 data = json.load(f)
 
 # Save
-with open(os.path.join(<path>, 'w') as f:
+with open(os.path.join(<path>, 'w')) as f:
     json.dump(<dict>, f, indent=4, sort_keys=True)
 
 ```

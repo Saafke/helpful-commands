@@ -15,7 +15,7 @@ with open(os.path.join(<path>, 'w')) as f:
 
 #### Imshow
 ```python
-cv2.imshow("window name", out-image)
+cv2.imshow("window name", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
@@ -25,7 +25,7 @@ cv2.destroyAllWindows()
 ffmpeg -i s1v1.avi %06d.png
 
 # Vice versa
-ffmpeg -i %04d.png output.mp4
+ffmpeg -i %06d.png output.mp4
 
 # If the filenames don't begin with 0 or have missing indices
 ffmpeg -framerate 5 -pattern_type glob -i '*.png' out.mp4
